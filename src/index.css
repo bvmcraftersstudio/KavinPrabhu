@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BME Student & NCC Cadet Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Light theme - Clean medical/engineering aesthetic */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Primary - Medical cross red with engineering blue */
+    --primary: 220 70% 50%;
+    --primary-foreground: 0 0% 98%;
+    --primary-muted: 220 70% 35%;
+
+    /* Secondary - NCC olive green */
+    --secondary: 120 25% 35%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Accent - Medical cross red */
+    --accent: 0 70% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Muted colors */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 40%;
+
+    /* Destructive colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border and input */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 70% 50%;
+
+    /* Design system tokens */
+    --radius: 0.75rem;
+
+    /* BME & NCC themed gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 70% 50%), hsl(120 25% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 13% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 13% 96%), hsl(0 0% 100%));
+    --gradient-medical: linear-gradient(135deg, hsl(0 70% 50%), hsl(220 70% 50%));
+    --gradient-ncc: linear-gradient(135deg, hsl(120 25% 35%), hsl(60 30% 40%));
+
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(220 70% 50% / 0.2);
+    --shadow-card: 0 4px 20px hsl(220 20% 10% / 0.1);
+    --shadow-medical: 0 0 30px hsl(0 70% 50% / 0.3);
+    --shadow-ncc: 0 0 30px hsl(120 25% 35% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-military: all 0.2s ease-in-out;
+  }
+
+  .dark {
+    /* Dark theme - Military/tactical aesthetic */
+    --background: 220 20% 8%;
+    --foreground: 0 0% 95%;
+
+    /* Card system */
+    --card: 220 20% 10%;
+    --card-foreground: 0 0% 95%;
+
+    /* Popover system */
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary - Tactical blue */
+    --primary: 220 70% 60%;
+    --primary-foreground: 220 20% 8%;
+    --primary-muted: 220 70% 45%;
+
+    /* Secondary - NCC olive green */
+    --secondary: 120 25% 45%;
+    --secondary-foreground: 220 20% 8%;
+
+    /* Accent - Emergency red */
+    --accent: 0 70% 60%;
+    --accent-foreground: 220 20% 8%;
+
+    /* Muted colors */
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 65%;
+
+    /* Destructive colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border and input */
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 220 70% 60%;
+
+    /* Dark theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 70% 60%), hsl(120 25% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 20% 10%), hsl(220 20% 15%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 20% 8%), hsl(220 20% 12%));
+    --gradient-medical: linear-gradient(135deg, hsl(0 70% 60%), hsl(220 70% 60%));
+    --gradient-ncc: linear-gradient(135deg, hsl(120 25% 45%), hsl(60 30% 50%));
+
+    /* Dark shadows */
+    --shadow-glow: 0 0 50px hsl(220 70% 60% / 0.4);
+    --shadow-card: 0 8px 30px hsl(220 20% 8% / 0.8);
+    --shadow-medical: 0 0 40px hsl(0 70% 60% / 0.4);
+    --shadow-ncc: 0 0 40px hsl(120 25% 45% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
